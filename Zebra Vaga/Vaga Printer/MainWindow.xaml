@@ -1,0 +1,40 @@
+﻿<Window x:Class="Vaga_Printer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vaga_Printer"
+        mc:Ignorable="d"
+        Title="Vaga Printer" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Name="labelFileName" Content="Izaberi etiketu" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" />
+        <Button x:Name="btnBrowse" Content="ETIKETA" Grid.Column="1" Grid.Row="3" Click="btnBrowse_Click" Margin="15 20 " FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnScale" Content="VAGA" Grid.Column="2" Grid.Row="3"  Margin="15 20 " FontSize="15" FontWeight="Bold" Click="btnScale_Click"/>
+        <Button x:Name="btnPrint" Content="STAMPAJ" Grid.Column="3" Grid.Row="3"  Margin="15 20 " FontSize="20" FontWeight="Bold" Click="btnPrint_Click"/>
+        <Label Content="Kolicina" Grid.Row="2" Grid.Column="3" Margin="30 20 30 20" FontWeight="DemiBold" FontSize="15" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtBoxCount" Grid.Row="2" Grid.Column="3" Margin="30 50 30 10" Text="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" GotFocus="txtBoxCount_GotFocus"/>
+        
+        <Label Content="Dana" Grid.Row="2" Grid.Column="2" Margin="80 20 10 20" FontWeight="DemiBold" FontSize="15" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtBoxDana" Grid.Row="2" Grid.Column="2" Margin="85 50 15 10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="0" GotFocus="txtBoxDana_GotFocus"/>
+
+        <Label Content="Meseci" Grid.Row="2" Grid.Column="2" Margin="10 20 80 20" FontWeight="DemiBold" FontSize="15" HorizontalContentAlignment="Center" />
+        <TextBox x:Name="txtBoxMeseci" Grid.Row="2" Grid.Column="2" Margin="15 50 85 10" Text="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" GotFocus="txtBoxMeseci_GotFocus" />
+
+        <Label Content="Datum 1" Grid.Row="2" Grid.Column="1" Margin="30 20 30 20" FontWeight="DemiBold" FontSize="15" HorizontalContentAlignment="Center"/>
+        <DatePicker x:Name="txtDatum1" Grid.Row="2" Grid.Column="1" Margin="30 50 30 10" FirstDayOfWeek="Monday" IsTodayHighlighted="False" />
+    </Grid>
+</Window>
