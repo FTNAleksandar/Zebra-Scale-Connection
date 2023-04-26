@@ -37,6 +37,8 @@ namespace Vaga_Printer
             }
             cbPort.SelectedIndex = 0;
 
+            txtRights.Text = " VAGA SERVIS DOO KRALJEVO\nvagaservis@gmail.com\n © 2023 All Rights Reserved";
+
         }
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
@@ -148,13 +150,7 @@ namespace Vaga_Printer
             _serialPort.Open();                                                                          //<-- make the comport listen
             lblPort.Content = "Slusam na " + _serialPort.PortName + "...\r\n";
         }
-        private void getScaleData(string data)
-        {
-
-            
-
-            
-        }
+    
 
         private delegate void Closure();
         private void SerialPortOnDataReceived(object sender, SerialDataReceivedEventArgs serialDataReceivedEventArgs)
