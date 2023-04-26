@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Vaga Printer.exe" version="1.0.0.0" publicKeyToken="f4ba075977fa17fd" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Vaga Printer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Vaga Printer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vaga Printer.exe" size="16864">
+      <assemblyIdentity name="Vaga Printer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+GK6m56S7fF83PUiU9C050nknm+VUgV8SMpbgtzpCRA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Vaga Printer.exe.config" size="1157">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RknPTlXX3ACD0AKPyg1z0tWZ7mIgi+K3IWBlb9JXh4I=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-G4I4Q9F\copa2" issuerKeyHash="efee07df1d3de0c518e7028bf26d9e2672f8405c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>pr5pGW7a7/58leH0BdV/IEWikkuAH5HiRY8VC6O6R00=</DigestValue></Reference></SignedInfo><SignatureValue>S5R36MlN8fpQHDMrkn/VEld0Y75xVpyKhb/AJLuLIdEsc++w/+YoW7ej0EdWeXbMKpRqCok5tVkX3fyijoRDLl7mBAmimAKRKdpuKm7sIW6bKdQ4DI7uLUbHSDnzRSxZTdwSaIocFOMQ8qLrYIAoeN08iHem/q5uT5wZ9PAEbmU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uv9UkEVmja6uai+IiemnGhQ2dgs1XpVmuxtcrgbVoair1M4ZT7tdF/VcLECT6kVlCBEBQtvufiFe1OnKbB9ENHcifBlL/YJs5GjweBwlnYqOQSAy6LDqHFVNhK0hl8h3OYIrvmXakdC5dHsixR00quhjjcv0+JNJNr/ltljwMtU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4d47baa30b158f45e2911f804b92a245207fd505f4e1957cfeefda6e1969bea6" Description="" Url=""><as:assemblyIdentity name="Vaga Printer.exe" version="1.0.0.0" publicKeyToken="f4ba075977fa17fd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-G4I4Q9F\copa2</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DUNNT8i831RMVWdKE0z6XK2OKO4zmr5QMFHOUV+Xdsg=</DigestValue></Reference></SignedInfo><SignatureValue>mmojnMD7H+UMwtmFlmGZmKi9uo8DkPiC6PrdOEdBYAKVqZhCfUFOxD3Io4vhPsjOZRzPPxzS2tOLchf2Udjnu2vPRdDcwfPQ78KohyDKd8a7t7dcBKKj7EpW6WH1f5qOkzPQBLr6Rz/7qZB8dCQqvbWIx29rCi40DLojqhit8fE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uv9UkEVmja6uai+IiemnGhQ2dgs1XpVmuxtcrgbVoair1M4ZT7tdF/VcLECT6kVlCBEBQtvufiFe1OnKbB9ENHcifBlL/YJs5GjweBwlnYqOQSAy6LDqHFVNhK0hl8h3OYIrvmXakdC5dHsixR00quhjjcv0+JNJNr/ltljwMtU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQEW7EgC3OgYhKZ5LYj3nuZjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEcANABJADQAUQA5AEYAXABjAG8AcABhADIwHhcNMjMwNDI2MTIxOTUwWhcNMjQwNDI1MTgxOTUwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEcANABJADQAUQA5AEYAXABjAG8AcABhADIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALr/VJBFZo2urmoviInppxoUNnYLNV6VZrsbXK4G1aGoq9TOGU+7XRf1XCxAk+pFZQgRAULb7n4hXtTpymwfRDR3InwZS/2CbORo8HgcJZ2KjkEgMuiw6hxVTYStIZfIdzmCK75l2pHQuXR7IsUdNKroY43L9PiTSTa/5bZY8DLVAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAs9C7RhfFJu7UBAPmz7aOhnCnQwkKsO2dvrpeeP7aiBZyuZPSdlh0l/KDlYIcXTzb90V6XvLEcrPeNYxTvbIE8E0NQZ3onQU0eONEdVDffRhZFgticaXuJXHpSZ4DNifSLyWN1vWdxsV0ZT/xKh4qm6TyxQ0pT1EtqmrG3QWr7rA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
