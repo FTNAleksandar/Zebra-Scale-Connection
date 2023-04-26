@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,20 @@ namespace Vaga_Printer
     /// </summary>
     public partial class MainWindow : Window
     {
+        private SerialPort _serialPort;         //<-- declares a SerialPort Variable to be used throughout the form
         internal static string FilePath = "";
+        private string scaleWeight = "";
         public MainWindow()
         {
             InitializeComponent();
-           
+
+            string[] portNames = SerialPort.GetPortNames();     //<-- Reads all available comPorts
+            foreach (var portName in portNames)
+            {
+                cbPort.Items.Add(portName);                  //<-- Adds Ports to combobox
+            }
+            cbPort.SelectedIndex = 0;
+
         }
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
@@ -63,7 +73,7 @@ namespace Vaga_Printer
             }
             //TODO VAGA TEZINA
             content = zebra.GetLabel(FilePath);
-            content = zebra.ReplaceTextWeight(content, "250");
+            content = zebra.ReplaceTextWeight(content,scaleWeight);
 
             try
             {
@@ -127,8 +137,48 @@ namespace Vaga_Printer
 
         private void btnScale_Click(object sender, RoutedEventArgs e)
         {
-            Podesavanja podesavanja = new Podesavanja();
-            podesavanja.Show();
+            if (_serialPort != null && _serialPort.IsOpen)
+                _serialPort.Close();
+            if (_serialPort != null)
+                _serialPort.Dispose();
+            //<-- End of Block
+
+            _serialPort = new SerialPort(cbPort.Text, Settings.Default.BaudRate, Parity.None, 8, StopBits.One);       //<-- Creates new SerialPort using the name selected in the combobox
+            _serialPort.DataReceived += SerialPortOnDataReceived;                                       //<-- this event happens everytime when new data is received by the ComPort
+            _serialPort.Open();                                                                          //<-- make the comport listen
+            lblPort.Content = "Slusam na " + _serialPort.PortName + "...\r\n";
+        }
+        private void getScaleData(string data)
+        {
+
+            
+
+            
+        }
+
+        private delegate void Closure();
+        private void SerialPortOnDataReceived(object sender, SerialDataReceivedEventArgs serialDataReceivedEventArgs)
+        {
+
+            //if(InvokeRequired)     //<-- Makes sure the function is invoked to work properly in the UI-Thread
+          //  Dispatcher.BeginInvoke(new Closure(() => { SerialPortOnDataReceived(sender, serialDataReceivedEventArgs); }));     //<-- Function invokes itself
+                                                                                                                               //else
+                                                                                                                               // {
+            int dataLength = _serialPort.BytesToRead;
+
+            byte[] data = new byte[dataLength];
+
+            int nbrDataRead = _serialPort.Read(data, 0, dataLength);
+            if (nbrDataRead == 0)
+                return;
+            string str = System.Text.Encoding.UTF8.GetString(data);
+
+            scaleWeight = str.Substring(3, 18);
+
+            this.Dispatcher.Invoke(() =>
+            {
+                txtVaga.Text = scaleWeight;
+            });
         }
     }
 }
