@@ -37,7 +37,7 @@ namespace Vaga_Printer
             }
             cbPort.SelectedIndex = 0;
 
-            txtRights.Text = " VAGA SERVIS DOO KRALJEVO\nvagaservis@gmail.com\n © 2023 All Rights Reserved";
+            txtRights.Text = " VAGA SERVIS DOO KRALJEVO\nvagaservis@gmail.com\n © 2023 ";
 
         }
 

@@ -1,0 +1,18 @@
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\bin\Debug\Vaga Printer.exe.config
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\bin\Debug\Vaga Printer.exe.manifest
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\bin\Debug\Vaga Printer.application
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\bin\Debug\Vaga Printer.exe
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\bin\Debug\Vaga Printer.pdb
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.csproj.AssemblyReference.cache
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.csproj.SuggestedBindingRedirects.cache
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\MainWindow.g.cs
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\App.g.cs
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer_MarkupCompile.cache
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer_MarkupCompile.lref
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\MainWindow.baml
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.g.resources
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.csproj.CoreCompileInputs.cache
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.exe.manifest
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.application
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.exe
+C:\Users\copa2\Desktop\Vaga Servis\Vaga Printer\Zebra-Scale-Connection\Zebra Vaga\Vaga Printer\obj\Debug\Vaga Printer.pdb
