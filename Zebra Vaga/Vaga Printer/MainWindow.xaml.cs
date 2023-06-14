@@ -77,22 +77,26 @@ namespace Vaga_Printer
             content = zebra.GetLabel(FilePath);
             content = zebra.ReplaceTextWeight(content,scaleWeight);
 
+            
             try
             {
-
-                content = zebra.ReplaceTextDate1(content, txtDatum1.SelectedDate.Value.ToString("dd.MM.yyyy"));
-
-
-                if (int.TryParse(txtBoxDana.Text, out int dana) && int.TryParse(txtBoxMeseci.Text, out int meseci))
+                if (txtDatum1.SelectedDate.Value != null)
                 {
-
-                    DateTime datum2 = txtDatum1.SelectedDate.Value.AddDays(dana);
-                    datum2 = datum2.AddMonths(meseci);
-                    content = zebra.ReplaceTextDate2(content, datum2.ToString("dd.MM.yyyy"));
+                    content = zebra.ReplaceTextDate1(content, txtDatum1.SelectedDate.Value.ToString("dd.MM.yyyy"));
                 }
-                else
+                if (!string.IsNullOrEmpty(txtBoxDana.Text) && !string.IsNullOrEmpty(txtBoxDana.Text))
                 {
-                    MessageBox.Show("Unesite validne datume!!", "ERROR", MessageBoxButton.OK);
+                    if (int.TryParse(txtBoxDana.Text, out int dana) && int.TryParse(txtBoxMeseci.Text, out int meseci))
+                    {
+
+                        DateTime datum2 = txtDatum1.SelectedDate.Value.AddDays(dana);
+                        datum2 = datum2.AddMonths(meseci);
+                        content = zebra.ReplaceTextDate2(content, datum2.ToString("dd.MM.yyyy"));
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unesite validne datume!!", "ERROR", MessageBoxButton.OK);
+                    }
                 }
             }
             catch(Exception ex)

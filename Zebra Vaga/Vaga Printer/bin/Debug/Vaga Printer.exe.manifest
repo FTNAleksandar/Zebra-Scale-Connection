@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vaga Printer.exe" size="807904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vaga Printer.exe" size="854496">
       <assemblyIdentity name="Vaga Printer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Yyy5/TQfSgxmC115wcabdcODUDNCcZPabKb1E4qlIfc=</dsig:DigestValue>
+        <dsig:DigestValue>Tatmsh2/rB9SApxHLw6HctzEmUxcU3WklLK0aGNX3FQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
